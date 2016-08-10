@@ -1,11 +1,12 @@
 extends _root.jade
 block title
-  title My Profile
+  title Dashboard
 block header
   header
     include ./blocks/_shared/_nav-menu.jade
 block content
     include ./blocks/_shared/_welcome.jade
     include ./blocks/_shared/_state.jade
+    include ./blocks/dashboard/_provider-help.jade
     include ./blocks/_shared/_information.jade
-    include ./blocks/my-profile/_content.jade
+    include ./blocks/dashboard/_newest-transaction.jade

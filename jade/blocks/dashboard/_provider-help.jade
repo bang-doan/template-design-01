@@ -1,0 +1,25 @@
+include ../../mixins/_input-item-button
+section.provider-help
+    .container
+        .row.provider-help__item-group
+            .col-md-4.col-xs-12.padding-0
+                .provider-help__item.provider-help__item--first
+                    .row
+                        .col-md-12.item-value 3.000.000
+                    .row
+                        .col-md-12.item-title PH Total
+            .col-md-4.col-xs-12.padding-0
+                .provider-help__item.provider-help__item--second
+                    .row
+                        .col-md-12.item-value 0
+                    .row
+                        .col-md-12.item-title PH Newest
+            .col-md-4.col-xs-12.padding-0
+                .provider-help__item.provider-help__item--thirt
+                    .row
+                        .col-md-12.item-value 4.500.000
+                    .row
+                        .col-md-12.item-title GH Total
+        .row
+            .col-md-12.provider-help__button
+                +input_item_button_("button", "Provide Help NOW", "btn_provide_help", " provider-help__button")

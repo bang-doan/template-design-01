@@ -1,0 +1,23 @@
+section.newest-transaction
+    .container
+        .row
+            .col-md-12
+                .newest-transaction__title Newest Transaction
+        .row
+            each classname, name in {PH: "request--ph", GH: "request--gh"}
+                .col-md-6
+                    .request(class=classname)
+                        .row
+                            .col-md-12.request__title 
+                                |Newest 
+                                span=name
+                                |  Requests
+                        .row.request__header
+                            .col-md-5 Username
+                            .col-md-2 Amount
+                            .col-md-5 Date
+                        each val in [1,2,3,4,5] 
+                            .row.request__item
+                                .col-md-5 hoangnguyen
+                                .col-md-2 3
+                                .col-md-5 10/08/2016

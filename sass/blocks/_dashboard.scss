@@ -1,0 +1,100 @@
+.provider-help{
+    margin-bottom: 20px;
+    
+    &__item-group{
+        margin-bottom: 15px;
+        
+        @include desktop{
+            margin-bottom: 35px;
+        }
+    }
+    &__item{
+        font-family: UTMDuepunt;
+        color: white;
+        background-color: $light-yellow;
+        padding: 15px 30px;
+        
+        &--first{
+            margin-bottom: 10px;
+            @include desktop{
+                margin-right: 10px;
+                margin-bottom: 0;
+            }            
+        }
+        
+        &--second{
+            margin-bottom: 10px;
+            @include desktop{
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 0;
+            }            
+        }
+        
+        &--thirt{
+            margin-bottom: 10px;
+            @include desktop{
+                margin-left: 10px;
+                margin-bottom: 0;
+            }            
+        }
+        
+        .item-title{
+            font-size: $normal;
+            padding-top: 15px;
+        }
+        
+        .item-value{
+            font-size: $bigger;
+        }
+    }
+    
+    &__button{
+        text-align: center;
+        > button{
+            width: 90%;
+            line-height: 37px;
+            border: 3px solid $light-yellow;
+            border-radius: 8px;
+            background-color: white;
+            font-family: UTMAvo;
+            font-size: $medium;
+            color: $light-yellow;
+            
+            @include desktop{
+                width: 48%;
+                font-size: $big;
+            }
+        }
+    }
+}
+
+.newest-transaction{
+    
+    &__title{
+        text-align: center;
+        font-family: UTMAvo;
+        font-size: $bigger;
+        color: #dda603;
+        margin-bottom: 30px;
+    }
+    
+    .request{
+        border: 1px solid $light-yellow;
+        
+        &__title{
+            text-align: center;
+            font-family: UTMAvo;
+            font-size: $medium;
+            color: #343433;
+            
+            > span{
+                color: $light-yellow;
+            }
+            
+            @include desktop{
+                font-size: $big;
+            }
+        }
+    }
+}
