@@ -1,0 +1,39 @@
+include ../../mixins/_input-item-text
+include ../../mixins/_input-item-button
+include ../../mixins/_link-item
+section.pin-wallet-listing
+    .container.border-1px-light-yellow.min-height-400
+        .row.pin-wallet-listing__header
+            .col-md-1 STT
+            .col-md-2 From
+            .col-md-2 To
+            .col-md-2 Amount
+            .col-md-2 Time
+            .col-md-3 Note
+        .row.pin-wallet-listing__item
+            .col-md-1 1
+            .col-md-2 From 1
+            .col-md-2 To 1
+            .col-md-2 Amount 1
+            .col-md-2 Time 1
+            .col-md-3 Note 1
+        .row.pin-wallet-listing__item
+            .col-md-1 2
+            .col-md-2 From 2
+            .col-md-2 To 2
+            .col-md-2 Amount 2
+            .col-md-2 Time 2
+            .col-md-3 Note 2
+    .container.padding-0
+        .row.pin-wallet-listing__paging
+            .col-md-4.padding-0
+                .col-md-2.active 
+                    +link_item_("#", "1", "paging-item")
+                .col-md-2 
+                    +link_item_("#", "2", "paging-item")
+                .col-md-2 
+                    +link_item_("#", "3", "paging-item")
+                .col-md-4
+                    +input_item_text_("", "pagingnumber", "", "paging-text")
+                .col-md-2.padding-0
+                    +input_item_button_("button", "Go", "gobutton", "paging-button")

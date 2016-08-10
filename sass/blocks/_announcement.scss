@@ -1,0 +1,17 @@
+.announcement{
+    font-family: UTMCaviar;
+    color: white;
+    text-align: center;
+    background-color: #282828;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    &__title{
+        font-size: $big;
+    }
+    
+    &__content{
+        font-size: $normal;
+    }
+}

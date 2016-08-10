@@ -1,0 +1,70 @@
+.signin-form{
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg-signin-form.jpg');
+    font-family: UTMAvo;
+    
+    &__title{
+        font-size: $big;
+        color: white;
+        margin-bottom: 25px;
+    }
+    
+    &__text{
+        width: 100%;
+        height: 45px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: left;
+        
+        &--id{
+            background-image: url('../images/signin-id.jpg');
+        }
+        
+        &--password{
+            background-image: url('../images/signin-password.jpg');
+        }
+        
+        > input{
+            border: none;
+            line-height: 40px;
+            margin: 2px 2px 2px 50px;
+            width: 240px;
+        }
+    }
+    
+    &__button-container{
+        margin-top: 20px;
+        
+        @include desktop{
+            padding-left: 0;
+            margin-top: 0;
+            margin-left: -25px;
+        }
+    }
+    
+    &__button{
+        background: #282828; /* Old browsers */
+        background: -moz-linear-gradient(top, #282828 0%, #96a5b3 50%, #96a5b3 51%, #282828 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #282828 0%,#96a5b3 50%,#96a5b3 51%,#282828 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #282828 0%,#96a5b3 50%,#96a5b3 51%,#282828 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        border: none;
+        font-size: 30px;
+        color: white;
+        
+        @include desktop{
+            width: 110px;
+            height: 115px;
+        }
+    }
+    
+    &__forgotten{
+        margin-top: 20px;
+        > a{
+            font-size: $normal;
+            color: white;
+        }
+    }
+}

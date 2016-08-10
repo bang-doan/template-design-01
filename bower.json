@@ -1,0 +1,35 @@
+{
+  "name": "Al Futtaim",
+  "authors": [
+    "Niteco"
+  ],
+  "description": "Al Futtaim front end",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+    "dependencies": {
+        "bootstrap-sass": "~3.3.5",
+        "jquery": "~2.1.4",
+        "jquery-ui": "~1.11.4",
+        "modernizr": "*",
+        "swiper": "*",
+        "headroom.js": "~0.7.0",
+        "animate.css": "~3.4.0",
+        "waypoints": "~4.0.0",
+        "owl-carousel2": "~2.0.0",
+        "isotope": "2.0.0",
+        "jquery.shapeshift": "2.0.0"
+    },
+    "resolutions": {
+        "jquery": "~2.1.4"
+    }
+}

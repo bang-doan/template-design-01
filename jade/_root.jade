@@ -1,0 +1,22 @@
+doctype html
+html 
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    block title
+      title My Profile
+    link(href="css/screen.css" rel="StyleSheet")
+    link(href="css/vendor.min.css" rel="StyleSheet")
+    script(src="js/jquery.min.js" type="text/javascript")
+  body
+    block header
+      header.header.header--fixed
+        include ./blocks/_shared/_nav-menu.jade
+    block content
+    footer
+      include ./blocks/_shared/_footer.jade
+//    a(class="up-to-top",href="#0")
+//      span.icon-arrow-up
+//    script(src="js/vendor.min.js" type="text/javascript")
+//    block scripts
+//      script(src="js/common.min.js" type="text/javascript")

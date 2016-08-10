@@ -1,0 +1,37 @@
+include ../../mixins/_row-item-input
+include ../../mixins/_input-item-button
+section.my-profile
+    .container
+        .row
+            .col-md-6 
+                .row.my-profile__title My Profile
+                .row.my-profile__table.margin-right-15
+                    .col-md-12
+                        +row_item_input_("My ID", "myid", "")
+                        +row_item_input_("User name", "username", "")
+                        +row_item_input_("Phone number", "phone", "")
+                        +row_item_input_("Email", "email", "")
+                        +row_item_input_("Bank number", "banknumber", "")
+                        +row_item_input_("Bank name", "bankname", "")
+                        +row_item_input_("Bank brand", "bankbrand", "")
+                        +row_item_input_("Sponsor ID", "sponsorid", "")
+                .row
+                    +input_item_button_("button", "Change Password", "change_password", "button-default")
+            .col-md-6
+                .row.my-profile__title.margin-left-15 Introduction
+                .row.my-profile__table.margin-left-15
+                    .col-md-12
+                        +row_item_input_("User name", "username", "Can't be blank")
+                        +row_item_input_("Phone number", "phone", "Can't be blank")
+                        +row_item_input_("Email", "email", "Can't be blank")
+                        +row_item_input_("Bank number", "banknumber", "Can't be blank, 13 number")
+                        +row_item_input_("Bank name", "bankname", "Can't be blank")
+                        +row_item_input_("Bank brand", "bankbrand", "Can't be blank")
+                        +row_item_input_("Password", "password", "Can't be blank")
+                        +row_item_input_("Retype password", "retypepassword", "Can't be blank")
+                .row.margin-left-0
+                    .col-md-5
+                        +input_item_button_("button", "Register", "register", "button-default")
+                    .col-md-6.margin-left-15.my-profile__error Something went wrong
+                .row.my-profile__message.margin-left-15
+                    |Congration! Intro successful. New ID:      Password:

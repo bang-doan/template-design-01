@@ -1,0 +1,14 @@
+$row-height: 55px;
+.col-lable {
+    background-color: #f7f7f7;
+    height: $row-height;
+    border-bottom: 1px solid $light-gray;
+    padding-top: 15px;
+}
+
+.input-text {
+    width: 100%;
+    border: 1px solid $light-gray;
+    border-bottom: 0;
+    height: $row-height;
+}

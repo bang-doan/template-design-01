@@ -1,0 +1,27 @@
+.my-profile {
+    font-family: UTMAvo;
+    margin-bottom: 20px;
+    &__title {
+        font-size: $big;
+        color: #7e7d7d;
+        margin-bottom: 15px;
+    }
+    &__table {
+        border: 1px solid #f0c852;
+        margin-bottom: 20px;
+    }
+    &__error {
+        line-height: $line-height-default;
+        font-size: $normal;
+        font-family: UTMAvo;
+        color: #ee0909;
+    }
+    &__message {
+        background-color: #8bf0c2;
+        margin-top: 20px;
+        line-height: $line-height-default;
+        font-size: $normal;
+        font-family: UTMAvo;
+        color: #096138;
+    }
+}

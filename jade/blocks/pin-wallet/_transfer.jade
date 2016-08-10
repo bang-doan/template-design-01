@@ -1,0 +1,24 @@
+include ../../mixins/_input-item-text
+include ../../mixins/_input-item-button
+section.pin-wallet-transfer
+    .container.border-2px-light-blue.padding-top-10.padding-bottom-10
+        .row
+            .col-md-2.padding-left-30
+                i.pin-wallet-transfer__icon
+            .col-md-10.padding-right-20
+                .row.margin-bottom-20
+                    .col-md-1.text-uppercase.pin-wallet-transfer__label From
+                    .col-md-3
+                        +input_item_text_("", "from", "", " pin-wallet-transfer__input")
+                    .col-md-1.text-uppercase.pin-wallet-transfer__label To
+                    .col-md-3
+                        +input_item_text_("", "to", "", " pin-wallet-transfer__input")
+                    .col-md-1.width-12.text-uppercase.pin-wallet-transfer__label Amount
+                    .col-md-3.width-20
+                        +input_item_text_("", "to", "", " pin-wallet-transfer__input")
+                .row
+                    .col-md-1.text-uppercase.pin-wallet-transfer__label Note
+                    .col-md-7
+                        +input_item_text_("", "note", "", " pin-wallet-transfer__input pin-wallet-transfer__input--long")
+                    .col-md-4
+                        +input_item_button_("button", "Transfer", "transfer", "pin-wallet-transfer__button text-uppercase")

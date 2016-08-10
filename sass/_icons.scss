@@ -1,0 +1,28 @@
+.icon-header {
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    margin-right: 8px;
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: left;
+    &--dashboard {
+        background-image: url('../images/icons/dashboard.png');
+    }
+    &--myprofile {
+        background-image: url('../images/icons/myprofile.png');
+    }
+    &--pinwallet {
+        background-image: url('../images/icons/pinwallet.png');
+    }
+    &--signout {
+        background-image: url('../images/icons/signout.png');
+    }
+    &--transaction {
+        background-image: url('../images/icons/transaction.png');
+    }
+    &--treesystem {
+        background-image: url('../images/icons/treesystem.png');
+    }
+}

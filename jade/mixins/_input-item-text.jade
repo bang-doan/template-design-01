@@ -1,0 +1,5 @@
+mixin input_item_text_(label, name, place_holder, extra_classes)
+    .input-text-container(class=extra_classes)
+        if label
+            label=label
+        input(type="text" name=name placeholder=place_holder)

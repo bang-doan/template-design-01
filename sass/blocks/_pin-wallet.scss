@@ -1,0 +1,101 @@
+.pin-wallet-transfer {
+    margin-bottom: 20px;
+    &__icon {
+        width: 85px;
+        height: 96px;
+        margin-top: -5px;
+        margin-right: 8px;
+        display: inline-block;
+        float: left;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url('../images/icons/wallet-transfer.png');
+    }
+    &__label {
+        font-family: UTMAvo;
+        font-size: $normal;
+    }
+    &__input {
+        input {
+            height: 34px;
+            border: 1px solid $light-blue;
+        }
+        &--long {
+            input {
+                width: 445px;
+            }
+        }
+    }
+    &__button {
+        font-family: UTMAvo;
+        font-size: $normal;
+        color: white;
+        background-color: $light-blue;
+        width: 255px;
+        height: 35px;
+        border: 1px solid;
+    }
+}
+
+.pin-wallet-listing {
+    &__header {
+        line-height: 50px;
+        font-family: UTMAvo;
+        font-size: $normal;
+    }
+    &__item {
+        line-height: 50px;
+        background-color: #f5f5f5;
+        margin-bottom: 1px;
+        border-bottom: 1px solid #dcdcdc;
+        font-family: UTMAvo;
+        font-size: $normal;
+    }
+    &__paging {
+        margin-top: 15px;
+        .paging-item {
+            > a {
+                font-family: UTMAvo;
+                font-size: $normal;
+                color: $light-yellow;
+            }
+            width: 40px;
+            height: 28px;
+            text-align: center;
+        }
+        .active {
+            .paging-item {
+                > a {
+                    color: white;
+                }
+                background-color: $light-yellow;
+                border: 1px solid $light-yellow;
+                border-radius: 8px;
+            }
+        }
+        .paging-text {
+            > input {
+                width: 75px;
+                height: 28px;
+                border: 1px solid $light-yellow;
+                border-radius: 8px;
+            }
+        }
+        .paging-button {
+            width: 40px;
+            height: 28px;
+            color: white;
+            background-color: $dark-yellow;
+            border: 1px solid $dark-yellow;
+            border-radius: 8px;
+        }
+    }
+}
+
+.width-12 {
+    width: 12%;
+}
+
+.width-20 {
+    width: 20%;
+}

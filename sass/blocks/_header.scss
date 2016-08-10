@@ -1,0 +1,107 @@
+.header {
+    background: #535e69;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #535e69 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #282828 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #535e69 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #282828 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #535e69 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #282828 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    &__logo{
+        width: 144px;
+        height: 122px;
+        display: inline-block;
+        float: left;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-image: url('../images/company-logo.png');
+    }
+    
+    &__title{
+        font-family: UTMAvo;
+        font-size: $medium;
+        color: white;
+        line-height: 122px;
+        margin-left: 10px;
+        
+        @include desktop{
+            argin-left: 20px;
+            font-size: $bigger;
+        }
+    }
+    
+    &__button{
+        background: #5e6c79; /* Old browsers */
+        background: -moz-linear-gradient(top, #5e6c79 0%, #aacef0 50%, #aacef0 51%, #4c565f 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #5e6c79 0%,#aacef0 50%,#aacef0 51%,#4c565f 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #5e6c79 0%,#aacef0 50%,#aacef0 51%,#4c565f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        border: none;
+        font-family: UTMDuepunt;
+        font-size: $normal;
+        color: white;
+        width: 80px;
+        height: 40px;
+    }
+    
+    &__group-language{
+        float: right;
+    }
+    
+    &__menu{
+        margin-top: 15px;
+        
+        @include desktop{
+            position: relative;
+
+            &-button{
+                position: absolute;
+                right: 0;
+                bottom: -27px;
+                margin-right: 15px;
+            }
+        }
+    }
+    
+    &__group-button{
+        float: right;
+    }
+    
+    &__language-title{
+        float: left;
+        font-family: UTMAvo;
+        font-size: $normal;
+        color: white;
+        margin-right: 15px;
+    }
+    
+    .language-logo{
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: left;
+
+        &--en{
+            background-image: url('../images/language-en.png');
+        }
+        
+        &--vn{
+            background-image: url('../images/language-vn.png');
+        }
+        
+        &--my{
+            background-image: url('../images/language-my.png');
+        }
+        
+        &--th{
+            background-image: url('../images/language-th.png');
+        }
+        
+        &--cn{
+            background-image: url('../images/language-cn.png');
+        }
+    }
+}

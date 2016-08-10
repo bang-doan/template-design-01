@@ -1,0 +1,21 @@
+.footer {
+    font-family: UTMCaviar;
+    font-size: $normal;
+    text-align: center;
+    margin: 15px;
+}
+
+.footer-master{
+    background: #55616d; /* Old browsers */
+    background: -moz-linear-gradient(left, #55616d 0%, #3b4045 50%, #3b4045 51%, #282929 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #55616d 0%,#3b4045 50%,#3b4045 51%,#282929 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #55616d 0%,#3b4045 50%,#3b4045 51%,#282929 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    .footer {
+        font-family: UTMCaviar;
+        font-size: $normal;
+        text-align: center;
+        margin: 15px;
+        color: white;
+    }
+}

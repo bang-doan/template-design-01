@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixins_media";
+@import "bootstrap-custom";
+@import "icons";
+@import "common";
+@import "blocks/nav-menu";
+@import "blocks/welcome";
+@import "blocks/state";
+@import "blocks/information";
+@import "blocks/my-profile";
+@import "blocks/pin-wallet";
+@import "blocks/footer";
+@import "blocks/header";
+@import "blocks/announcement";
+@import "blocks/signin-form";
+@import "components/row-item-input";
+@import "components/button-default";
+@font-face {
+    font-family: 'UTMAurora';
+    src: url("/fonts/UTM_Aurora.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTMAvo';
+    src: url("/fonts/UTM_Avo.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTMCaviar';
+    src: url("/fonts/UTM_Caviar.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTMDuepunt';
+    src: url("/fonts/UTM_Duepuntozero.ttf");
+    font-weight: normal;
+    font-style: normal;
+}

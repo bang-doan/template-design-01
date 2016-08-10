@@ -1,0 +1,28 @@
+include ../../mixins/_input-item-button
+.header
+    .container
+        .row
+            .col-md-7.col-xs-12
+                i.header__logo
+                span.header__title.text-uppercase company name
+            .col-md-5.col-xs-12
+                .row
+                    .col-md-12
+                        .header__group-language
+                            .header__language-title Language
+                            a(href="#")
+                                i.language-logo.language-logo--en
+                            a(href="#")
+                                i.language-logo.language-logo--vn
+                            a(href="#")
+                                i.language-logo.language-logo--my
+                            a(href="#")
+                                i.language-logo.language-logo--th
+                            a(href="#")
+                                i.language-logo.language-logo--cn
+        .row.header__menu
+            .col-md-12.header__menu-button
+                .header__group-button
+                    +input_item_button_("button", "About us", "aboutus", "header__button")
+                    +input_item_button_("button", "Rule", "rule", "header__button")
+                    +input_item_button_("button", "Sign-in", "signin", "header__button")
