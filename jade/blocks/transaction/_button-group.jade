@@ -1,0 +1,13 @@
+include ../../mixins/_input-item-button
+section.transaction-button-group
+    .container
+        .row
+            .col-md-4.col-xs-12.padding-0
+                .transaction-button.transaction-button--first
+                    +input_item_button_("button", "Provide Help", "btn_provide_help", "transaction-button__item")
+            .col-md-4.col-xs-12.padding-0
+                .transaction-button.transaction-button--second
+                    +input_item_button_("button", "Get Help", "btn_provide_help", "transaction-button__item active")
+            .col-md-4.col-xs-12.padding-0
+                .transaction-button.transaction-button--third
+                    +input_item_button_("button", "History", "btn_provide_help", "transaction-button__item")

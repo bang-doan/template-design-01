@@ -1,0 +1,54 @@
+.transaction-button-group{
+    padding-top: 10px;
+    margin-bottom: 35px;
+    
+    .transaction-button{
+        &--first{
+            margin-bottom: 10px;
+            @include desktop{
+                margin-right: 30px;
+                margin-bottom: 0;
+            }            
+        }
+        
+        &--second{
+            margin-bottom: 10px;
+            @include desktop{
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 0;
+            }            
+        }
+        
+        &--third{
+            margin-bottom: 10px;
+            @include desktop{
+                margin-left: 30px;
+                margin-bottom: 0;
+            }            
+        }
+        
+        &__item{
+            width: 100%;
+            line-height: 65px;
+            border: 2px solid $light-yellow;
+            border-radius: 8px;
+            background-color: white;
+            font-family: UTMAvo;
+            font-size: $big;
+            
+            &:hover{
+                background-color: $light-yellow;
+            }
+        }
+        
+        .active{
+            background-color: $light-yellow;
+        }
+    }
+}
+
+.transaction-gh{
+    margin-bottom: 20px;
+    
+}

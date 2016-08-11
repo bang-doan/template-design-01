@@ -1,0 +1,34 @@
+include ../../mixins/_transaction-confirm
+section.transaction-gh
+    .container
+        .row
+            .transaction-gh__item
+                .row
+                    .col-md-5.col-xs-12 Giver's information 1
+                    .col-md-3.col-xs-12
+                        i.sponsor-icon
+                        |Sponsor ID
+                    .col-md-4.col-xs-12.item-header__red Time up!
+                .row
+                    .col-md-5.col-xs-12
+                        .row 
+                            .col-md-12 Name:
+                        .row
+                            .col-md-12 ID:
+                        .row 
+                            .col-md-12 Phone number:
+                        .row 
+                            .col-md-12 Bank number:
+                        .row 
+                            .col-md-12 Bank brand:
+                    .col-md-3.col-xs-12
+                        .row 
+                            .col-md-12 Name:
+                        .row
+                            .col-md-12 ID:
+                        .row 
+                            .col-md-12 Phone number:
+                    .col-md-4.col-xs-12
+                        .row
+                            +input_item_button_("button", "Confirm", "btn_provide_help", "transaction-button__item")
+                            
