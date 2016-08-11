@@ -3,32 +3,33 @@ section.transaction-gh
     .container
         .row
             .transaction-gh__item
-                .row
-                    .col-md-5.col-xs-12 Giver's information 1
-                    .col-md-3.col-xs-12
-                        i.sponsor-icon
-                        |Sponsor ID
-                    .col-md-4.col-xs-12.item-header__red Time up!
-                .row
-                    .col-md-5.col-xs-12
-                        .row 
-                            .col-md-12 Name:
-                        .row
-                            .col-md-12 ID:
-                        .row 
-                            .col-md-12 Phone number:
-                        .row 
-                            .col-md-12 Bank number:
-                        .row 
-                            .col-md-12 Bank brand:
-                    .col-md-3.col-xs-12
-                        .row 
-                            .col-md-12 Name:
-                        .row
-                            .col-md-12 ID:
-                        .row 
-                            .col-md-12 Phone number:
-                    .col-md-4.col-xs-12
-                        .row
-                            +input_item_button_("button", "Confirm", "btn_provide_help", "transaction-button__item")
-                            
+                .col-md-5.col-xs-12.item-left
+                    .row
+                        .col-md-12.item-header Giver's information 1
+                    .row 
+                        .col-md-12.padding-bottom-5.padding-left-25 Name:
+                    .row
+                        .col-md-12.padding-bottom-5.padding-left-25 ID:
+                    .row 
+                        .col-md-12.padding-bottom-5.padding-left-25 Phone number:
+                    .row 
+                        .col-md-12.padding-bottom-5.padding-left-25 Bank number:
+                    .row 
+                        .col-md-12.padding-bottom-5.padding-left-25 Bank brand:
+                .col-md-3.col-xs-12.item-middle
+                    .row
+                        .col-md-12.item-header
+                            i.sponsor-icon
+                            |Sponsor ID
+                    .row.border-left-right.margin-top-25
+                        .col-md-12.padding-bottom-5 Name:
+                    .row.border-left-right
+                        .col-md-12.padding-bottom-5 ID:
+                    .row.border-left-right
+                        .col-md-12.padding-bottom-5 Phone number:
+                .col-md-4.col-xs-12.item-right
+                    .row
+                        .col-md-12.item-header.item-header--red Time up!
+                    .row
+                        .col-md-12.padding-left-25
+                            +transaction_confirm_("transaction-gh__confirmed")
