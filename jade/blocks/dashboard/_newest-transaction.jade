@@ -5,7 +5,7 @@ section.newest-transaction
                 .newest-transaction__title Newest Transaction
         .row
             each classname, name in {PH: "request--ph", GH: "request--gh"}
-                .col-md-6
+                .col-md-6.padding-0
                     .request(class=classname)
                         .row
                             .col-md-12.request__title 
@@ -13,11 +13,11 @@ section.newest-transaction
                                 span=name
                                 |  Requests
                         .row.request__header
-                            .col-md-5 Username
-                            .col-md-2 Amount
-                            .col-md-5 Date
+                            .col-xs-5.col-md-5 Username
+                            .col-xs-2.col-md-2 Amount
+                            .col-xs-5.col-md-5 Date
                         each val in [1,2,3,4,5] 
                             .row.request__item
-                                .col-md-5 hoangnguyen
-                                .col-md-2 3
-                                .col-md-5 10/08/2016
+                                .col-xs-5.col-md-5 hoangnguyen
+                                .col-xs-2.col-md-2 3
+                                .col-xs-5.col-md-5 10/08/2016

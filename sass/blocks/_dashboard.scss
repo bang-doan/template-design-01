@@ -1,57 +1,49 @@
-.provider-help{
+.provider-help {
     margin-bottom: 20px;
-    
-    &__item-group{
+    &__item-group {
         margin-bottom: 15px;
-        
-        @include desktop{
+        @include desktop {
             margin-bottom: 35px;
         }
     }
-    &__item{
+    &__item {
         font-family: UTMDuepunt;
         color: white;
         background-color: $light-yellow;
         padding: 15px 30px;
-        
-        &--first{
+        &--first {
             margin-bottom: 10px;
-            @include desktop{
+            @include desktop {
                 margin-right: 10px;
                 margin-bottom: 0;
-            }            
+            }
         }
-        
-        &--second{
+        &--second {
             margin-bottom: 10px;
-            @include desktop{
+            @include desktop {
                 margin-left: 10px;
                 margin-right: 10px;
                 margin-bottom: 0;
-            }            
+            }
         }
-        
-        &--thirt{
+        &--thirt {
             margin-bottom: 10px;
-            @include desktop{
+            @include desktop {
                 margin-left: 10px;
                 margin-bottom: 0;
-            }            
+            }
         }
-        
-        .item-title{
+        .item-title {
             font-size: $normal;
             padding-top: 15px;
         }
-        
-        .item-value{
+        .item-value {
             font-size: $bigger;
         }
     }
-    
-    &__button{
+    &__button {
         text-align: center;
-        > button{
+        > button {
             width: 90%;
             line-height: 37px;
             border: 3px solid $light-yellow;
@@ -60,8 +52,7 @@
             font-family: UTMAvo;
             font-size: $medium;
             color: $light-yellow;
-            
-            @include desktop{
+            @include desktop {
                 width: 48%;
                 font-size: $big;
             }
@@ -69,31 +60,55 @@
     }
 }
 
-.newest-transaction{
-    
-    &__title{
+.newest-transaction {
+    &__title {
         text-align: center;
         font-family: UTMAvo;
         font-size: $bigger;
         color: #dda603;
         margin-bottom: 30px;
     }
-    
-    .request{
+    .request {
         border: 1px solid $light-yellow;
-        
-        &__title{
+        font-family: UTMAvo;
+        &--ph {
+            margin-bottom: 20px;
+            @include desktop {
+                margin-bottom: 0;
+                margin-right: 10px;
+            }
+        }
+        &--gh {
+            margin-bottom: 20px;
+            @include desktop {
+                margin-bottom: 0;
+                margin-left: 10px;
+            }
+        }
+        &__title {
             text-align: center;
-            font-family: UTMAvo;
             font-size: $medium;
             color: #343433;
-            
-            > span{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            > span {
                 color: $light-yellow;
             }
-            
-            @include desktop{
+            @include desktop {
                 font-size: $big;
+            }
+        }
+        &__header {
+            margin: 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #c9c9c9;
+        }
+        &__item {
+            margin: 0;
+            line-height: 55px;
+            border-top: 1px solid #f0f0f0;
+            &:nth-child(odd) {
+                background-color: #fcfcfc;
             }
         }
     }
