@@ -1,4 +1,4 @@
-mixin transaction_confirm_(head_class)
+mixin transaction_confirm_(head_class, index)
     div(class=head_class)
         .row.confirmed
             .col-md-6.col-xs-6.confirmed__button
@@ -7,3 +7,47 @@ mixin transaction_confirm_(head_class)
                 a(href="#")
                     i.blank-icon
                     span Click to view
+        .row.confirm
+            .col-md-6.col-xs-6.confirm__button
+                button(type="button" name="btn_confirm" class="button-confirm") Confirm
+                button(type="button" name="btn_report" class="button-report") Report
+            .col-md-6.col-xs-6.confirm__link
+                a(href="#")
+                    i.blank-icon
+                    span Click to view
+        .row.reported
+            .col-md-6.col-xs-6.reported__button
+                button(type="button" name="btn_reported") reported
+            .col-md-6.col-xs-6.reported__link
+                a(href="#")
+                    i.blank-icon
+                    span Click to view
+        .row.confirming
+            .col-md-6.col-xs-6.confirming__button
+                button(type="button" name="btn_confirm" class="button-confirm") Confirm
+                button(type="button" name="btn_report" class="button-report") Report
+            .col-md-6.col-xs-6.confirming__box
+                .row
+                    .col-md-12
+                        .confirming__box-header Choose the reason
+                .row
+                    .item
+                        .col-md-8.col-xs-8.item__label not transfer
+                        .col-md-4.col-xs-4.item__checkbox
+                            input(type="checkbox" id="cb_not_transfer_#{index}" name='nottransfer' value="None")
+                            label(for="cb_not_transfer_#{index}")
+                .row
+                    .item
+                        .col-md-8.col-xs-8.item__label other
+                        .col-md-4.col-xs-4.item__checkbox
+                            input(type="checkbox" id="cb_other_#{index}" name='other'  value="None" checked)
+                            label(for="cb_other_#{index}")
+                .row
+                    .col-md-12.item__textbox
+                        input(type="text" name='reason')
+                .row
+                    .button-group
+                        .col-md-6.col-xs-6
+                            button(type="button" name="btn_yes" class="button button--yes") Yes
+                        .col-md-6.col-xs-6
+                            button(type="button" name="btn_no" class="button button--no") No

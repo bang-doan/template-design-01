@@ -1,35 +1,36 @@
 include ../../mixins/_transaction-confirm
 section.transaction-gh
     .container
-        .row
-            .transaction-gh__item
-                .col-md-5.col-xs-12.item-left
-                    .row
-                        .col-md-12.item-header Giver's information 1
-                    .row 
-                        .col-md-12.padding-bottom-5.padding-left-25 Name:
-                    .row
-                        .col-md-12.padding-bottom-5.padding-left-25 ID:
-                    .row 
-                        .col-md-12.padding-bottom-5.padding-left-25 Phone number:
-                    .row 
-                        .col-md-12.padding-bottom-5.padding-left-25 Bank number:
-                    .row 
-                        .col-md-12.padding-bottom-5.padding-left-25 Bank brand:
-                .col-md-3.col-xs-12.item-middle
-                    .row
-                        .col-md-12.item-header
-                            i.sponsor-icon
-                            |Sponsor ID
-                    .row.border-left-right.margin-top-25
-                        .col-md-12.padding-bottom-5 Name:
-                    .row.border-left-right
-                        .col-md-12.padding-bottom-5 ID:
-                    .row.border-left-right
-                        .col-md-12.padding-bottom-5 Phone number:
-                .col-md-4.col-xs-12.item-right
-                    .row
-                        .col-md-12.item-header.item-header--red Time up!
-                    .row
-                        .col-md-12.padding-left-25
-                            +transaction_confirm_("transaction-gh__confirmed")
+        each value, index in {1:"transaction-gh__confirmed", 2:"transaction-gh__confirming", 3:"transaction-gh__reported", 4:"transaction-gh__confirm"}
+            .row
+                .transaction-gh__item
+                    .col-md-5.col-xs-12.item-left
+                        .row
+                            .col-md-12.item-header Giver's information #{index}
+                        .row 
+                            .col-md-12.padding-bottom-5.padding-left-25 Name:
+                        .row
+                            .col-md-12.padding-bottom-5.padding-left-25 ID:
+                        .row 
+                            .col-md-12.padding-bottom-5.padding-left-25 Phone number:
+                        .row 
+                            .col-md-12.padding-bottom-5.padding-left-25 Bank number:
+                        .row 
+                            .col-md-12.padding-bottom-5.padding-left-25 Bank brand:
+                    .col-md-3.col-xs-12.item-middle
+                        .row
+                            .col-md-12.item-header
+                                i.sponsor-icon
+                                |Sponsor ID
+                        .row.border-left-right.margin-top-25
+                            .col-md-12.padding-bottom-15 Name:
+                        .row.border-left-right
+                            .col-md-12.padding-bottom-15 ID:
+                        .row.border-left-right
+                            .col-md-12.padding-bottom-15 Phone number:
+                    .col-md-4.col-xs-12.item-right
+                        .row
+                            .col-md-12.item-header.item-header--red Time up!
+                        .row
+                            .col-md-12.padding-left-25
+                                +transaction_confirm_(value, index)
