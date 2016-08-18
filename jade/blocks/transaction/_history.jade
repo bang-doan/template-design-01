@@ -1,0 +1,76 @@
+include ../../mixins/_input-item-text
+include ../../mixins/_input-item-button
+include ../../mixins/_link-item
+section.transaction-history
+    .container
+        .row
+            .col-md-8.col-xs-12.padding-0.margin-bottom-30
+                .transaction-history__search
+                    +input_item_text_("", "txtSearch", "Search by ID, State, Type, Created date, Last modified...", " transaction-history__search-textbox")
+                    +input_item_button_("button", "", "btn_seach", " transaction-history__search-button")
+        .row
+            .col-md-12.transaction-history__listing
+                .row.transaction-history__listing-header
+                    .col-md-1 STT
+                    .col-md-2 From ID
+                    .col-md-2 To ID
+                    .col-md-1 State
+                    .col-md-2 Type
+                    .col-md-2 Created Date
+                    .col-md-2 Last Modified
+                .row
+                    a.transaction-history__listing-item(href="#")
+                        .col-md-1 1
+                        .col-md-2 From ID 1
+                        .col-md-2 To ID 1
+                        .col-md-1 Done
+                        .col-md-2 Give
+                        .col-md-2 08/08/2016
+                        .col-md-2 08/08/2016
+                    .item-expand
+                        .col-md-10
+                            .item-expand__content
+                                .row
+                                    .col-md-1.content-header 
+                                        span FROM
+                                    .col-md-3 Name: 
+                                    .col-md-3 Phone No.:
+                                    .col-md-2 Bank No.:
+                                    .col-md-3 Bank brand:
+                                .row
+                                    .col-md-1.content-header 
+                                    .col-md-3 Sponser ID:
+                                    .col-md-3 Name
+                                    .col-md-2 Phone No.:
+                                    .col-md-3 
+                                .row.border-top-1
+                                    .col-md-1.content-header 
+                                        span TO
+                                    .col-md-3 Name: 
+                                    .col-md-3 Phone No.:
+                                    .col-md-2 Bank No.:
+                                    .col-md-3 Bank brand:
+                                .row
+                                    .col-md-1.content-header 
+                                    .col-md-3 Sponser ID:
+                                    .col-md-3 Name:
+                                    .col-md-2 Phone No.:
+                                    .col-md-3
+                        .col-md-2.padding-0            
+                            .item-expand__image
+                                a(href="#")
+                                    i.blank-icon
+                                    span Click to view
+            .container.padding-0
+                .row.pin-wallet-listing__paging
+                    .col-md-4.padding-0
+                        .col-md-2.active 
+                            +link_item_("#", "1", "paging-item")
+                        .col-md-2 
+                            +link_item_("#", "2", "paging-item")
+                        .col-md-2 
+                            +link_item_("#", "3", "paging-item")
+                        .col-md-4
+                            +input_item_text_("", "pagingnumber", "", "paging-text")
+                        .col-md-2.padding-0
+                            +input_item_button_("button", "Go", "gobutton", "paging-button")

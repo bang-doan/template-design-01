@@ -386,3 +386,119 @@
         }
     }
 }
+
+.transaction-history{
+    &__search{
+        margin-bottom: 30px;
+        
+        &-textbox{
+            float: left;
+            
+            > input{
+                width: 300px;
+                height: 50px;
+                border: 1px solid $light-yellow;
+                border-radius: 8px 0 0 8px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: UTMAvo;
+                font-size: 16px;
+                
+                @include desktop{
+                    width: 600px;
+                }
+            }
+        }
+        
+        &-button{
+            float: left;
+            width: 65px;
+            height: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('../images/icons/search-box.png');
+            background-color: $light-yellow;
+            border: 1px solid $light-yellow;
+            border-radius: 0 8px 8px 0;
+            
+            @include desktop{
+                width: 95px;
+            }
+        }
+    }
+    
+    &__listing{
+        border: 1px solid $light-yellow;
+        font-family: UTMAvo;
+        font-size: $normal;
+        color: #000;
+        min-height: 500px;
+        margin-bottom: 20px;
+        
+        &-header{
+            line-height: 50px;
+        }
+        
+        &-item{
+            line-height: 50px;
+            border-bottom: 1px solid #dcdcdc;
+            height: 50px;
+            display: block;
+            background-color: #e1f0f6;
+            color: #000;    
+        }
+        
+        .item-expand{
+            margin-left: 25px;
+
+
+            &__content{
+                font-size: 16px;
+                
+                .row{
+                    height: 35px;
+                    line-height: 35px;
+                    background-color: #e1f0f6;
+                }
+                
+                .content-header{
+                    font-size: 18px;
+                    padding-left: 10px;
+                    background-color: #ccdae0;
+                    height: 35px;
+                    
+                    > span{
+                        position: absolute;
+                        top: 18px;
+                        z-index: 1;
+                    }
+                }
+                
+                .border-top-1{
+                    border-top: 1px solid #dcdcdc;
+                }
+            }
+            
+            &__image{
+                text-align: center;
+                background-color: #e1f0f6;
+                padding-top: 5px;
+                padding-bottom: 4px;
+                padding-left: 15px;
+                
+                .blank-icon{
+                    width: 141px;
+                    height: 106px;
+                    float: left;
+                    background-repeat: no-repeat;
+                    background-image: url('../images/blank2.png');
+                }
+                
+                > a > span{
+                    color: #c5c5c5;
+                    font-size: 14px;
+                } 
+            }
+        }
+    }
+}
